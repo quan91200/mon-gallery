@@ -76,7 +76,7 @@ export default App;
 
 const H1 = styled.div`
   font-family: "Dancing Script", cursive;
-  margin: 0;
+  margin: 0 auto;
   overflow: hidden;
   transition: 0.4s;
   position: fixed;
@@ -110,4 +110,5 @@ const IframeContainer = styled.div`
 
 const Content = styled.div`
   margin-top: 120px; /* Điều chỉnh khoảng cách dựa trên chiều cao của H1 */
+  margin: 0 4rem;
 `;
