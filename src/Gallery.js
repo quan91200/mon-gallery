@@ -30,6 +30,7 @@ const Gallery = () => {
                         <img
                             alt={`Gallery image ${index + 1}`}
                             src={images[key]}
+                            loading="lazy"
                             style={{ width: '100%' }}
                         />
                     </Pics>
