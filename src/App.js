@@ -6,6 +6,7 @@ import Gallery from './Gallery';
 import styled from 'styled-components';
 import spotify from './logo.svg'
 import facebook from './facebook-svgrepo-com.svg'
+import v from './IdentityV.png'
 
 function App() {
 
@@ -41,6 +42,9 @@ function App() {
         </a>
         <a href='https://www.facebook.com/profile.php?id=100085656587491' target="_blank" rel="noopener noreferrer">
           <Logo src={facebook} alt='Facebook logo' />
+        </a>
+        <a target="_blank" rel="noopener noreferrer" href='https://idv.163.com/'>
+          <Logo src={v} alt="V Logo" />
         </a>
       </H1>
       <Content>
@@ -97,7 +101,7 @@ const Logo = styled.img`
   width: 30px; /* Kích thước logo */
   margin-left: 1rem; /* Khoảng cách giữa logo và tiêu đề */
   vertical-align: middle; /* Căn giữa logo với văn bản */
-  opacity: 0.6;
+  
 `;
 
 const IframeContainer = styled.div`
