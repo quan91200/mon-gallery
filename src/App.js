@@ -15,7 +15,6 @@ function App() {
 export default App;
 
 const Apps = styled.div`
-  width: 1280px;
   margin: 0 auto;
   text-align: center;
   font-family: "Dancing Script", cursive;
