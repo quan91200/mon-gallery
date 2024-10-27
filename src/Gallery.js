@@ -140,8 +140,8 @@ const Container = styled.div`
         -moz-column-count: 4;
         column-count: 4;
     }
-
-    @media (max-width: 768px) {
+    
+    @media (max-width: 1200px) {
         -webkit-column-count: 3;
         -moz-column-count: 3;
         column-count: 3;
