@@ -1,92 +1,9 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
-
-import Img1 from './images/1.jpg'
-import Img2 from './images/2.jpg'
-import Img3 from './images/3.jpg'
-import Img4 from './images/4.jpg'
-import Img5 from './images/5.jpg'
-import Img6 from './images/6.jpg'
-import Img7 from './images/7.jpg'
-import Img8 from './images/8.jpg'
-import Img9 from './images/9.jpg'
-import Img10 from './images/10.jpg'
-import Img11 from './images/11.jpg'
-import Img12 from './images/12.jpg'
-import Img13 from './images/13.jpg'
-import Img14 from './images/14.jpg'
-import Img15 from './images/15.jpg'
-import Img16 from './images/16.jpg'
+import images from './images'
 
 const Gallery = () => {
-
-    let data = [
-        {
-            id: 1,
-            imgSrc: Img1
-        },
-        {
-            id: 2,
-            imgSrc: Img2
-        },
-        {
-            id: 3,
-            imgSrc: Img3
-        },
-        {
-            id: 4,
-            imgSrc: Img4
-        },
-        {
-            id: 5,
-            imgSrc: Img5
-        },
-        {
-            id: 6,
-            imgSrc: Img6
-        },
-        {
-            id: 7,
-            imgSrc: Img7
-        },
-        {
-            id: 8,
-            imgSrc: Img8
-        },
-        {
-            id: 9,
-            imgSrc: Img9
-        },
-        {
-            id: 10,
-            imgSrc: Img10
-        },
-        {
-            id: 11,
-            imgSrc: Img11
-        },
-        {
-            id: 12,
-            imgSrc: Img12
-        },
-        {
-            id: 13,
-            imgSrc: Img13
-        },
-        {
-            id: 14,
-            imgSrc: Img14
-        },
-        {
-            id: 15,
-            imgSrc: Img15
-        },
-        {
-            id: 16,
-            imgSrc: Img16
-        },
-    ]
-
     const [model, setModel] = useState(false)
     const [tempImgSrc, setTempImgSrc] = useState('')
 
@@ -108,17 +25,15 @@ const Gallery = () => {
                 />
             </Modal>
             <Container>
-                {data.map((item) => {
-                    return (
-                        <Pics key={item.id} onClick={() => getImg(item.imgSrc)}>
-                            <img
-                                alt={item.description || 'Gallery image'}
-                                src={item.imgSrc}
-                                style={{ width: '100%' }}
-                            />
-                        </Pics>
-                    )
-                })}
+                {Object.keys(images).map((key, index) => (
+                    <Pics key={index} onClick={() => getImg(images[key])}>
+                        <img
+                            alt={`Gallery image ${index + 1}`}
+                            src={images[key]}
+                            style={{ width: '100%' }}
+                        />
+                    </Pics>
+                ))}
             </Container>
         </>
     )
