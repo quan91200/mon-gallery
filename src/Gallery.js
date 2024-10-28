@@ -71,7 +71,7 @@ const Pics = styled.div`
     margin-bottom: 1rem;
 
     &:hover {
-        transform: scale(1.01);
+        transform: scale(1.03);
         -webkit-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
         filler: opacity(.8);

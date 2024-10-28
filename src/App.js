@@ -91,16 +91,16 @@ const H1 = styled.div`
   justify-content: center;
 
   &.shrink {
-    font-size: 1.8rem; /* Kích thước khi thu nhỏ */
-    padding: 1.8rem 0.625rem; /* Padding khi thu nhỏ */
+    font-size: 1.8rem;
+    padding: 1.8rem 0.625rem;
     background-color: rgba(248, 251, 238, 0.6);
   }
 `;
 
 const Logo = styled.img`
-  width: 30px; /* Kích thước logo */
-  margin-left: 1rem; /* Khoảng cách giữa logo và tiêu đề */
-  vertical-align: middle; /* Căn giữa logo với văn bản */
+  width: 30px;
+  margin-left: 1rem; 
+  vertical-align: middle;
   
 `;
 
@@ -109,6 +109,6 @@ const IframeContainer = styled.div`
 `;
 
 const Content = styled.div`
-  margin-top: 120px; /* Điều chỉnh khoảng cách dựa trên chiều cao của H1 */
+  margin-top: 120px;
   margin: 0 4rem;
 `;
