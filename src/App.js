@@ -109,6 +109,6 @@ const IframeContainer = styled.div`
 `;
 
 const Content = styled.div`
-  margin-top: 120px;
+  margin-top: 150px;
   margin: 0 4rem;
 `;
